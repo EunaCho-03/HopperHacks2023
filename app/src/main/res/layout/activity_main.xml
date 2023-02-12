@@ -28,7 +28,7 @@
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content"
                 android:layout_gravity = "center"
-                android:text = "Graderly"
+                android:text = "Gradely"
                 android:textColor = "#ffffff"
                 android:textSize = "25dp"
                 android:textStyle = "bold"
@@ -70,12 +70,14 @@
             android:layout_height="wrap_content"
             android:textColor = "#ffffff"
             android:layout_gravity = "center"
-            android:text="Find Minimum Grade to Earn GPA you want"
+            android:text="Find Minimum Grade to Earn the GPA you want"
             android:textSize = "20dp"
             android:drawableStart = "@drawable/ic_baseline_star_24"
             android:drawableLeft = "@drawable/ic_baseline_star_24"
             android:layout_marginTop = "10dp"
             android:background = "@color/colorPrimary"/>
+
+
     </LinearLayout>
 
     </LinearLayout>

@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class min_grade extends AppCompatActivity {
 /*
@@ -86,6 +87,7 @@ public class min_grade extends AppCompatActivity {
 
         calculate = findViewById(R.id.calculate);
         calculate.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 aim_gpa = Integer.parseInt(gpa_aim.getText().toString());
@@ -96,7 +98,12 @@ public class min_grade extends AppCompatActivity {
                 resultText = findViewById(R.id.result);
                 Intent intent = getIntent();
 
-                resultText.setText(String.valueOf(resultNumber));
+                if(resultNumber > 100){
+                    Toast.makeText(getApplicationContext(),"Unavailable to Calculate; please input different number",
+                            Toast.LENGTH_LONG).show();
+                }else {
+                    resultText.setText(String.valueOf(resultNumber));
+                }
             }
         });
     }
