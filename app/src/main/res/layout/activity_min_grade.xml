@@ -12,23 +12,23 @@
         android:orientation = "vertical">
 
         <EditText
+            android:id = "@+id/gpa_aim"
             android:layout_width = "280dp"
             android:layout_height = "wrap_content"
             android:hint = "GPA you are aiming for"
             android:layout_gravity = "center"
             android:padding = "10dp"
             android:textColor = "#ffffff"
-            android:id = "@+id/gpa_aim"
             android:layout_marginTop = "50dp"
            />
         <EditText
+            android:id = "@+id/current_avg"
             android:layout_width = "280dp"
             android:layout_height = "wrap_content"
             android:hint = "Current average"
             android:layout_gravity = "center"
             android:padding = "10dp"
             android:textColor = "#ffffff"
-            android:id = "@+id/current_average"
             android:layout_marginTop = "50dp"
           />
 
@@ -44,7 +44,7 @@
             android:layout_gravity = "center"/>
 
         <TextView
-            android:id = "@+id/min_grade"
+            android:id = "@+id/result"
             android:layout_width = "wrap_content"
             android:layout_height = "wrap_content"
             android:textSize = "30sp"
