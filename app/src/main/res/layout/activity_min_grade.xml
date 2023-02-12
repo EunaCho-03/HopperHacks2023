@@ -18,7 +18,6 @@
             android:hint = "GPA you are aiming for"
             android:layout_gravity = "center"
             android:padding = "10dp"
-            android:textColor = "#ffffff"
             android:layout_marginTop = "50dp"
            />
         <EditText
@@ -28,7 +27,6 @@
             android:hint = "Current average"
             android:layout_gravity = "center"
             android:padding = "10dp"
-            android:textColor = "#ffffff"
             android:layout_marginTop = "50dp"
           />
 

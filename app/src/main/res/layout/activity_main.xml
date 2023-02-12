@@ -1,22 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation = "vertical"
-    android:weightSum = "100"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/avg_gpa"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Average GPA" />
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:orientation = "vertical">
 
-    <Button
-        android:id="@+id/min_grade"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Minimum Grade" />
-</LinearLayout>
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "225dp"
+            android:orientation = "vertical"
+            android:background = "@color/colorPrimary">
+
+            <ImageView
+                android:layout_width = "125dp"
+                android:layout_height = "125dp"
+                android:layout_gravity = "center"
+                android:layout_marginTop = "20dp"
+                android:src = "@drawable/img"/>
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity = "center"
+                android:text = "Graderly"
+                android:textColor = "#ffffff"
+                android:textSize = "25dp"
+                android:textStyle = "bold"
+                android:layout_marginTop = "10dp"/>
+
+            <TextView
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity = "center"
+                android:text = "To Become a Successful Seawolf"
+                android:textColor = "#ffffff"
+                android:textSize = "17dp"
+                android:textStyle = "bold" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:orientation = "vertical">
+
+        <Button
+            android:id="@+id/avg_gpa"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:textColor = "#ffffff"
+            android:text="Calculate your GPA"
+            android:padding = "10dp"
+            android:textSize = "20dp"
+            android:layout_gravity = "center"
+            android:drawableStart = "@drawable/ic_baseline_school_24"
+            android:drawableLeft = "@drawable/ic_baseline_school_24"
+            android:layout_marginTop = "50dp"
+            android:background = "@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/min_grade"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:textColor = "#ffffff"
+            android:layout_gravity = "center"
+            android:text="Find Minimum Grade to Earn GPA you want"
+            android:textSize = "20dp"
+            android:drawableStart = "@drawable/ic_baseline_star_24"
+            android:drawableLeft = "@drawable/ic_baseline_star_24"
+            android:layout_marginTop = "10dp"
+            android:background = "@color/colorPrimary"/>
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

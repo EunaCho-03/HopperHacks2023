@@ -73,13 +73,14 @@ public class min_grade extends AppCompatActivity {
     private EditText current_avg;
     private int min_grade = 0;
     int resultNumber = 0;
-    private TextView result;
+    private TextView resultText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_min_grade);
 
+        resultText = findViewById(R.id.result);
         gpa_aim = findViewById(R.id.gpa_aim);
         current_avg = findViewById(R.id.current_avg);
 
@@ -89,11 +90,13 @@ public class min_grade extends AppCompatActivity {
             public void onClick(View view) {
                 aim_gpa = Integer.parseInt(gpa_aim.getText().toString());
                 current_grade = Integer.parseInt(current_avg.getText().toString());
+                resultNumber = 2 * aim_gpa - current_grade;
 
-                result = findViewById(R.id.result);
+                resultText.setTextColor(0XFF000000);
+                resultText = findViewById(R.id.result);
                 Intent intent = getIntent();
 
-                result.setText(String.valueOf(resultNumber));
+                resultText.setText(String.valueOf(resultNumber));
             }
         });
     }
